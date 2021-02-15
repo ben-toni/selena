@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
@@ -20,5 +21,6 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('categories', [CategoryController::class, 'index'])->name('category.index');
     Route::get('products', [ProductController::class, 'index'])->name('product.index');
 });

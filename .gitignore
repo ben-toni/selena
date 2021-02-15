@@ -1,9 +1,11 @@
 /node_modules
 /public/hot
 /public/storage
+/public/css/*.css
+/public/js/*.js
 /storage/*.key
 /vendor
-.vscode
+/.vscode
 .editorconfig
 .env
 .env.backup

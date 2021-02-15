@@ -2,14 +2,14 @@
     <app-layout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Products
+                Categories
             </h2>
         </template>
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                    Here will be list of all products and posible filters
+                    This will be visible only to Admins
                 </div>
             </div>
         </div>
