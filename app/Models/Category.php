@@ -11,6 +11,11 @@ class Category extends Model
 
     protected $guarded = [];
 
+    protected $casts = [
+        'created_at' => 'date:Y-m-d',
+        'updated_at' => 'date:Y-m-d',
+    ];
+
     public function products()
     {
         return $this->hasMany(Product::class);
